@@ -25,7 +25,7 @@ local function apply_theme()
   ss({ "Italic" }, {
     italic = true,
   })
-  ss({ "BoldItalic", "Macro" }, {
+  ss({ "BoldItalic" }, {
     bold = true,
     italic = true,
   })
@@ -168,7 +168,7 @@ local function apply_theme()
     fg = "brightyellow",
   })
   ss({ "Comment", "TSComment", "@comment" }, {
-    fg = "brightblack",
+    fg = "white",
   })
   ss({
     "Identifier",
@@ -181,7 +181,7 @@ local function apply_theme()
   })
   ss({
     "Conditional", "Define", "Include", "Keyword",
-    "Label", "PreProc", "Repeat", "Statement",
+    "Label", "PreProc", "Repeat", "Statement", "Macro",
     "TSConditional", "TSRepeat", "TSKeyword", "TSKeywordFunction",
     "TSKeywordReturn", "TSInclude", "TSStatement", "TSException",
     "@conditional", "@repeat", "@keyword", "@keyword.function", "@keyword.return",
