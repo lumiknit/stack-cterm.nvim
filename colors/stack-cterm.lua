@@ -80,12 +80,12 @@ local function apply_theme()
   })
   ss({ "IncSearch" }, {
     fg = "black",
-    bg = "yellow",
+    bg = "cyan",
     bold = true,
   })
   ss({ "Search", "Substitute" }, {
     fg = "black",
-    bg = "yellow",
+    bg = "cyan",
   })
   ss({ "Visual", "VisualNOS" }, {
     reverse = true,
