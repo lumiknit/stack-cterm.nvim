@@ -195,7 +195,7 @@ local function apply_theme()
     "TSType", "TSTypeBuiltin", "TSTag",
     "@type", "@type.builtin", "@tag",
   }, {
-    fg = "brightblue",
+    fg = "brightyellow",
   })
   ss({
     "Namespace", "TSNamespace", "@namespace",
