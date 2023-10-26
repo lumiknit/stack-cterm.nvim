@@ -163,7 +163,7 @@ local function apply_theme()
   ss({
     "Function",
     "TSFunction", "TSMethod",
-    "@function", "@method"
+    "@function", "@function.macro", "@method"
   }, {
     fg = "brightyellow",
   })
@@ -187,6 +187,11 @@ local function apply_theme()
     "@conditional", "@repeat", "@keyword", "@keyword.function", "@keyword.return",
     "@label", "@preproc", "@exception",
     "@statement", 
+  }, {
+    fg = "brightblue",
+  })
+  ss({
+    "@type.qualifier"
   }, {
     fg = "brightblue",
   })
