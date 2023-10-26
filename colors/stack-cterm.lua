@@ -174,11 +174,18 @@ local function apply_theme()
   ss({
     "Identifier",
     "TSParameter", "TSParameterReference", "TSField",
-    "TSVariable", "TSVariableBuiltin",
+    "TSVariable", "TSFunctionCall",
     "@parameter", "@parameter.reference", "@field",
-    "@identifier", "@variable", "@variable.builtin"
+    "@identifier", "@variable",
+    "@function.call"
   }, {
     fg = "none",
+  })
+  ss({
+    "TSVariableBuiltin",
+    "@variable.builtin",
+  }, {
+    fg = "brightgreen",
   })
   ss({
     "Property", "Symbol",
@@ -206,7 +213,8 @@ local function apply_theme()
   })
   ss({
     "TSTypeQualifier", "TSTypeBuiltin",
-    "@type.qualifier", "@type.builtin"
+    "@type.qualifier", "@type.builtin",
+    "@type.dart"
   }, {
     fg = "brightblue",
   })
