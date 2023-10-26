@@ -135,6 +135,7 @@ local function apply_theme()
     "TSTagDelimiter",
     "@punctuation.delimiter", "@punctuation.delimiter.markdown",
     "@punctuation.bracket", "@punctuation.special",
+    "@tag.delimiter"
   }, {
       fg = "none"
   })
@@ -163,7 +164,7 @@ local function apply_theme()
   ss({
     "Function",
     "TSFunction", "TSMethod",
-    "@function", "@function.macro", "@method"
+    "@function", "@method", "@attribute"
   }, {
     fg = "brightyellow",
   })
@@ -172,12 +173,23 @@ local function apply_theme()
   })
   ss({
     "Identifier",
-    "TSParameter", "TSParameterReference", "TSProperty", "TSField",
-    "TSVariable", "TSVariableBuiltin", "TSTagCustom", "TSTagAttribute",
-    "@parameter", "@parameter.reference", "@property", "@field",
-    "@identifier", "@variable", "@variable.builtin", "@tag.custom", "@tag.attribute",
+    "TSParameter", "TSParameterReference", "TSField",
+    "TSVariable", "TSVariableBuiltin",
+    "@parameter", "@parameter.reference", "@field",
+    "@identifier", "@variable", "@variable.builtin"
   }, {
     fg = "none",
+  })
+  ss({
+    "Property", "TSProperty", "@property"
+  }, {
+    fg = "brightmagenta",
+  })
+  ss({
+    "TSTagCustom", "TSTagAttribute",
+    "@tag.custom", "@tag.attribute"
+  }, {
+    fg = "brightblue",
   })
   ss({
     "Conditional", "Define", "Include", "Keyword",
