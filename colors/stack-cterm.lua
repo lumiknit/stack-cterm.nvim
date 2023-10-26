@@ -174,10 +174,10 @@ local function apply_theme()
   ss({
     "Identifier",
     "TSParameter", "TSParameterReference", "TSField",
-    "TSVariable", "TSFunctionCall",
+    "TSVariable", "TSFunctionCall", "TSMethodCall",
     "@parameter", "@parameter.reference", "@field",
     "@identifier", "@variable",
-    "@function.call"
+    "@function.call", "@method.call",
   }, {
     fg = "none",
   })
