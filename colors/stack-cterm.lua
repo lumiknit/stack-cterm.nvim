@@ -181,7 +181,9 @@ local function apply_theme()
     fg = "none",
   })
   ss({
-    "Property", "TSProperty", "@property"
+    "Property", "Symbol",
+    "TSProperty", "TSSymbol",
+    "@property", "@symbol",
   }, {
     fg = "brightmagenta",
   })
@@ -203,14 +205,15 @@ local function apply_theme()
     fg = "brightblue",
   })
   ss({
-    "@type.qualifier"
+    "TSTypeQualifier", "TSTypeBuiltin",
+    "@type.qualifier", "@type.builtin"
   }, {
     fg = "brightblue",
   })
   ss({
     "StorageClass", "Structure", "Tag", "Type",
-    "TSType", "TSTypeBuiltin", "TSTag",
-    "@type", "@type.builtin", "@tag",
+    "TSType", "TSTag",
+    "@type", "@tag",
   }, {
     fg = "brightyellow",
   })
